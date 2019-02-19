@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apple Harvest Festival</title>
+  <link href="style/index.css" type="text/css" rel="stylesheet" />
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/validation.js" type="text/javascript"></script>
+</head>
+
+<body class = "background">
+  <header>
+    <nav>
+      <ul class = "navbar">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="event.html"> Event</a></li>
+        <li><a href="food.html"> Food</a></li>
+        <li><a href="direction.html"> Direction</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class = "index_v1">
+    <h1> Ithaca Apple Harvest Festival </h1>
+    <p> September 28th - September 30th </p>
+    <p> 9:00 - 18:00 </p>
+  </div>
+
+  <div class="phrase">
+    <h3> Enjoy the three day festival celebrating food, fun, apple </h3>
+  </div>
+
+  <div>
+    <h4> Contact Information </h4>
+      <p><strong>Email and Address</strong><address>
+      <p><a href="mailto:apple_harvest_festival@example.org">apple_harvest_festival@example.org</a></p>
+      <p>Ithaca, New York</p></address>
+      <p><strong>Telephone Number</strong>: 123-456-7890 </p>
+  </div>
+
+  <section>
+    <h1 class = "forms"> Survey </h1>
+    <form id = "form" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2018fa/submit.php" novalidate>
+      <div>
+        <label for = "age">Age: </label>
+        <input id = "age" type="number" name = "age" min="0" max = "120" required/>
+        <span id = "age_feedback" class = "feedback hidden"> Please enter valid age number</span>
+      </div>
+
+      <div>
+        <label for = "grade">Grade: </label>
+        <input id = "grade" type="text" name = "grade" required/>
+        <span id = "grade_feedback" class = "feedback hidden">Please enter valid grade. Please include only letters</span>
+        <p class = "center">If you are a univerity student, please input grade in letter. If not please enter grade in numbers.</p>
+      </div>
+
+      <div>
+        <label for = "email"> Email Address: </label>
+        <input id = "email" type="email" name = "email" required/>
+        <span id = "email_feedback" class = "feedback hidden">Please enter valid Email address</span>
+      </div>
+
+      <div>
+        <label for = "favorite_food"> Please select your favorite food: </label>
+          <select id = "favorite_food" name = "food">
+            <option value = "apple doughnut"> Apple Doughnut </option>
+            <option value = "apple cider"> Apple Cider </option>
+            <option value = "apple pie"> Apple Pie </option>
+            <option value = "apple popcorn"> Apple Popcorn </option>
+            <option value = "apple wine"> Apple Wine </option>
+            <option value = "apple candy"> Apple Candy </option>
+          </select>
+      </div>
+
+      <div class = "radio">
+        Please select your favorite event:
+        <div id = "favorite_event">
+          <input type = "radio" name = "event" value = "commons" required/> Commons
+          <input type = "radio" name = "event" value = "bernie millton stage"/> Bernie Millton Stage
+          <input type = "radio" name = "event" value = "dewitt park"/> Dewitt Park
+          <input type = "radio" name = "event" value = "w.state street"/> W.state Street
+          <input type = "radio" name = "event" value = "tompkins library"/> Tompkins County Public Library
+          <input type = "radio" name = "event" value = "center ithaca"/> Center Ithaca
+          <span id = "event_feedback" class = "feedback hidden">Please choose one option</span>
+        </div>
+      </div>
+
+      <div>
+        <label for = "improvement" > Improvement for the website: </label>
+        <textarea id = "improvement" rows = "2" maxlength = "600">Enter your comments...</textarea>
+        <span id = "improvement_feedback" class = "feeback hidden">Please limit your response to 600 characters</span>
+      </div>
+
+      <div>
+        <label> Submit the form </label>
+        <input type="submit" name = "submit" value = "submit"/>
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>

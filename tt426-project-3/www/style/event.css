@@ -1,0 +1,139 @@
+header{
+  /* Navigation bar */
+  background-color: orange;
+  margin:1em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
+}
+
+header ul li {
+  /* Navigation bar format */
+  display: inline;
+  padding: 1em 1em 1em 1em;
+  margin-right: 8%;
+  margin-left: 9%;
+  font-size: 1em;
+  align-self: center;
+  text-align: center;
+}
+
+/* Links */
+a:link{
+  color:dimgrey;
+}
+
+a:visited{
+  color:dimgrey;
+}
+
+a:hover{
+  color:white;
+}
+
+h1{
+  /* Title */
+  text-align: center;
+}
+
+body{
+  /* Background */
+  background-color:#ffdfa8;
+}
+
+.row {
+  /* Formatting of orientation of boxes */
+  margin: 10px 30px 0px 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.box {
+  /* Format of boxes */
+  height: 400px;
+  flex-grow: 1;
+  text-align: center;
+  margin: 0px 5px;
+  padding: 10px;
+}
+
+.commons {
+  background-color: #baff98;
+  width: 200px
+}
+
+.bmg {
+  background-color: #ff9791;
+  width: 200px
+}
+
+.dewitt_park {
+  background-color: #baff98;
+  width: 200px
+}
+
+.street {
+  background-color: #ff9791;
+  width: 200px
+}
+
+.library {
+  background-color: #baff98;
+  width: 200px
+}
+
+.center {
+  background-color: #ff9791;
+  width: 200px
+}
+
+/*Source: Lab05 */
+
+/* Responsive design for screen less than 600px */
+@media screen and (max-width: 600px) {
+  div.row {
+    flex-direction: column;
+    /* width: 500px; */
+    margin-bottom: 100px;
+  }
+
+  .box{
+    width: 100%;
+    align-self: center;
+  }
+
+header{
+  height:auto;
+}
+
+nav ul li{
+  width:100%;
+  height:0px;
+  align-items:center;
+  /* background-color: white; */
+}
+}
+
+/* Responsive design for screen between 600px and 900px */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  div.row {
+    flex-direction: column;
+    /* width: 500px; */
+    margin-bottom: 100px;
+  }
+
+  .box{
+    width: 100%;
+    align-self: center;
+  }
+
+header{
+  height:auto;
+}
+
+nav ul li{
+  width:100%;
+  height:0px;
+  align-items:center;
+  /* background-color: white; */
+}
+}

@@ -1,0 +1,192 @@
+header{
+  /* Navigation bar */
+  background-color: #96b068;
+  padding: 1em 1em 1em 1em;
+}
+
+header ul li {
+  /* Navigation format */
+  display: inline;
+  padding: 1em 1em 1em 1em;
+  margin-right: 8%;
+  margin-left: 9%;
+  font-size: 1em;
+  align-self: center;
+  text-align: center;
+}
+
+/* Links */
+  a:link{
+  color:dimgrey;
+}
+
+a:visited{
+  color:dimgrey;
+}
+
+a:hover{
+  color:white;
+}
+
+body.background{
+/* Background color */
+  background-color:#97cade;
+}
+
+.phrase{
+  font-size: 2em;
+  text-align:center;
+}
+
+div.index_v1{
+  /* background image */
+  text-align:center;
+  background-image:url("../image/background.JPG");
+  /* Photo taken by me */
+  margin-top: 2%;
+  padding: 20% 20% 20% 20%;
+  font-size: 2em;
+  color: white;
+}
+
+.forms{
+  text-align:center;
+  font-size:30px;
+}
+
+#form {
+  display: flex;
+  flex-direction:column;
+  align-self:center;
+  /* display:inline-block; */
+}
+
+#form label {
+  display: inline-block;
+  width: 300px;
+  margin-left:100px;
+  text-align: right;
+  margin: 10px;
+}
+
+#form button.submit {
+  margin-left: 300px; /* Same as label width above */
+  width: 80px;
+  text-align: center;
+}
+
+.center{
+  text-align: center;
+}
+
+.radio{
+  display:inline;
+}
+
+.feedback {
+  font-weight: bold;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Format taken from Lab09 */
+
+/* Responsive design for screen less than 600px */
+@media screen and (max-width : 600px) {
+  .header-container {
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+nav {
+   align-self: center;
+   margin: 0 0.8em 0 0;
+}
+
+/* Form Section */
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#form label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  line-break: normal;
+}
+
+#form button.submit {
+   margin-left: 300px; /* Same as label width above */
+   width: 80px;
+   text-align: center;
+}
+
+.forms{
+ text-align:center;
+ font-size:30px;
+}
+
+.feedback {
+  font-weight: bold;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Format taken from Lab09 */
+}
+
+/* Responsive design for screen between 600px and 900px */
+@media screen and (min-width : 600px) and (max-width: 900px) {
+  .header-container {
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+nav {
+   align-self: center;
+   margin: 0 0.8em 0 0;
+}
+
+#form {
+   display: flex;
+   flex-direction:column;
+}
+
+#form label {
+   display: inline-block;
+   width: 150px;
+   text-align: right;
+}
+
+#form button.submit {
+   margin-left: 300px; /* Same as label width above */
+   width: 80px;
+   text-align: center;
+}
+
+.forms{
+  text-align:center;
+  font-size:30px;
+}
+
+.feedback {
+  font-weight: bold;
+  color: red;
+  display:inline;
+}
+
+.hidden {
+  display: none !important;
+}
+
+}
+/* Format taken from Lab09 */
